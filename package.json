@@ -1,0 +1,17 @@
+{
+  "name": "and-bootcamp-project-backend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "koa": "^2.3.0",
+    "moment": "^2.19.1",
+    "node-pg-migrate": "^2.13.1",
+    "pg": "^7.3.0",
+    "winston": "^2.4.0"
+  },
+  "scripts": {
+    "migration:create": "pg-migrate create",
+    "migration:up": "pg-migrate up",
+    "migration:down": "pg-migrate down"
+  }
+}
