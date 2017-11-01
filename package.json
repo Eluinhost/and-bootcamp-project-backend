@@ -2,8 +2,11 @@
   "name": "and-bootcamp-project-backend",
   "version": "0.1.0",
   "private": true,
+  "main": "src/index.js",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
     "moment": "^2.19.1",
     "node-pg-migrate": "^2.13.1",
     "pg": "^7.3.0",
@@ -12,6 +15,11 @@
   "scripts": {
     "migration:create": "pg-migrate create",
     "migration:up": "pg-migrate up",
-    "migration:down": "pg-migrate down"
+    "migration:down": "pg-migrate down",
+    "test": "jest",
+    "watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
   }
 }
